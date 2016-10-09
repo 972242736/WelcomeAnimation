@@ -24,6 +24,7 @@ public class WelcomePagerTransformer implements ViewPager.PageTransformer {
                     factor = (float) child.getTag();
                 }
                 child.setTranslationX(position * factor * child.getWidth());
+                //设置某个view的点击监听
                 if(child.getId() == R.id.iv_enter){
                     view.setOnClickListener(new View.OnClickListener() {
                         @Override
